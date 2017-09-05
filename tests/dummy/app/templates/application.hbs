@@ -289,15 +289,15 @@
 
 
   <h3 class="mdc-typography--subheading2">Tabs as <code>\{{link-to}}</code></h3>
-  {{#mdc-tab-bar current-route=currentRouteName as |bar|}}
-    {{#bar.tab "application"}}
-      Index
-    {{/bar.tab}}
+  {{#mdc-tab-bar as |bar|}}
     {{#bar.tab "one"}}
       One
     {{/bar.tab}}
     {{#bar.tab "two"}}
       Two
+    {{/bar.tab}}
+    {{#bar.tab "three"}}
+      Three
     {{/bar.tab}}
   {{/mdc-tab-bar}}
 
