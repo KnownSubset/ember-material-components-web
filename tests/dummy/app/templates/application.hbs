@@ -371,6 +371,18 @@
   </div>
 </section>
 
+<section class="component-doc">
+  <h2 class="mdc-typography--title">Toolbar</h2>
+
+  {{#mdc-toolbar tagName="header" as |toolbar|}}
+    {{#toolbar.row as |row|}}
+      {{#row.section align="start" as |section|}}
+        {{#section.title}}Toolbar{{/section.title}}
+      {{/row.section}}
+    {{/toolbar.row}}
+  {{/mdc-toolbar}}
+</section>
+
 {{/if}}
 
 {{#mdc-button class="toggle-demo-visibility" click=(action (toggle "isDemoVisible" this))}}Toggle visibility{{/mdc-button}}
