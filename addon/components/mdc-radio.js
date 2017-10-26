@@ -90,8 +90,8 @@ export default Ember.Component.extend(MDCComponent, SupportsBubblesFalse, {
    */
   createFoundation() {
     return new MDCRadioFoundation({
-      addClass: className => run(() => get(this, 'mdcClasses').addObject(className)),
-      removeClass: className => run(() => get(this, 'mdcClasses').removeObject(className)),
+      addClass: className => run.next(() => get(this, 'mdcClasses').addObject(className)),
+      removeClass: className => run.next(() => get(this, 'mdcClasses').removeObject(className)),
       getNativeControl: () => this.$('input').get(0),
     });
   },

@@ -89,13 +89,13 @@ export default Ember.Component.extend(MDCComponent, {
   //region Methods
   createFoundation() {
     return new MDCTabBarScrollerFoundation({
-      addClass: (className) => run(() => get(this, 'mdcClasses').addObject(className)),
-      removeClass: (className) => run(() => get(this, 'mdcClasses').removeObject(className)),
+      addClass: (className) => run.next(() => get(this, 'mdcClasses').addObject(className)),
+      removeClass: (className) => run.next(() => get(this, 'mdcClasses').removeObject(className)),
       eventTargetHasClass: (target, className) => target.classList.contains(className),
-      addClassToForwardIndicator: (className) => run(() => get(this, 'forwardIndicatorClasses').addObject(className)),
-      removeClassFromForwardIndicator: (className) => run(() => get(this, 'forwardIndicatorClasses').removeObject(className)),
-      addClassToBackIndicator: (className) => run(() => get(this, 'backIndicatorClasses').addObject(className)),
-      removeClassFromBackIndicator: (className) => run(() => get(this, 'backIndicatorClasses').removeObject(className)),
+      addClassToForwardIndicator: (className) => run.next(() => get(this, 'forwardIndicatorClasses').addObject(className)),
+      removeClassFromForwardIndicator: (className) => run.next(() => get(this, 'forwardIndicatorClasses').removeObject(className)),
+      addClassToBackIndicator: (className) => run.next(() => get(this, 'backIndicatorClasses').addObject(className)),
+      removeClassFromBackIndicator: (className) => run.next(() => get(this, 'backIndicatorClasses').removeObject(className)),
       isRTL: () => !!this && !get(this, 'isDestroyed') && !!get(this, 'element') && getComputedStyle(get(this, 'element')).getPropertyValue('direction') === 'rtl',
       registerBackIndicatorClickHandler: (handler) => get(this, 'backIndicatorElement').addEventListener('click', handler),
       deregisterBackIndicatorClickHandler: (handler) => get(this, 'backIndicatorElement').removeEventListener('click', handler),
@@ -113,7 +113,7 @@ export default Ember.Component.extend(MDCComponent, {
       setScrollLeftForScrollFrame: (scrollLeftAmount) =>  get(this, 'scrollFrameElement').scrollLeft = scrollLeftAmount,
       getOffsetWidthForTabBar: () => get(this, 'tabBarElement').offsetWidth,
       setTransformStyleForTabBar: (value) => {
-        run(() => this.setStyleFor('mdcScrollFrameStyles', getCorrectPropertyName(window, 'transform'), value));
+        run.next(() => this.setStyleFor('mdcScrollFrameStyles', getCorrectPropertyName(window, 'transform'), value));
       },
       getOffsetLeftForEventTarget: (target) => target.offsetLeft,
       getOffsetWidthForEventTarget: (target) => target.offsetWidth

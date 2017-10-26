@@ -80,12 +80,12 @@ export default Ember.Component.extend(MDCComponent, SupportsBubblesFalse, {
    */
   createFoundation() {
     return new MDCCheckboxFoundation({
-      addClass: (className) => run(() => addClass(className, this)),
-      removeClass: (className) => run(() => removeClass(className, this)),
+      addClass: (className) => run.next(() => addClass(className, this)),
+      removeClass: (className) => run.next(() => removeClass(className, this)),
       registerAnimationEndHandler: (handler) => getElementProperty(this, 'addEventListener', () => null)(ANIM_END_EVENT_NAME, handler),
       deregisterAnimationEndHandler: (handler) => getElementProperty(this, 'removeEventListener', () => null)(ANIM_END_EVENT_NAME, handler),
-      registerChangeHandler: (handler) => run(() => get(this, 'changeHandlers').addObject(handler)),
-      deregisterChangeHandler: (handler) => run(() => get(this, 'changeHandlers').removeObject(handler)),
+      registerChangeHandler: (handler) => run.next(() => get(this, 'changeHandlers').addObject(handler)),
+      deregisterChangeHandler: (handler) => run.next(() => get(this, 'changeHandlers').removeObject(handler)),
       getNativeControl: () => this.$('input').get(0),
       forceLayout: () => undefined,
       isAttachedToDOM: () => !!get(this, 'element')

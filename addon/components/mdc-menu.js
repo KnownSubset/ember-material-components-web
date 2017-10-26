@@ -97,8 +97,8 @@ export default Ember.Component.extend(MDCComponent, {
   },
   createFoundation() {
     return new MDCSimpleMenuFoundation({
-      addClass: className => run(() => get(this, 'mdcClasses').addObject(className)),
-      removeClass: className => run(() => get(this, 'mdcClasses').removeObject(className)),
+      addClass: className => run.next(() => get(this, 'mdcClasses').addObject(className)),
+      removeClass: className => run.next(() => get(this, 'mdcClasses').removeObject(className)),
       hasClass: className => get(this, 'element.classList').contains(className),
       hasNecessaryDom: () => !!get(this , 'element') && !!this.$(strings.ITEMS_SELECTOR).length,
       getInnerDimensions: () => {
@@ -108,8 +108,8 @@ export default Ember.Component.extend(MDCComponent, {
       hasAnchor: () => get(this, 'anchor'),
       getAnchorDimensions: () => get(this, 'anchor').getAnchorDimensions(),
       getWindowDimensions: () => ({ width: window.innerWidth, height: window.innerHeight }),
-      setScale: (x, y) => run(() => this.setStyleFor('mdcStyles', TRANSFORM_PROPERTY, `scale(${x}, ${y}`)),
-      setInnerScale: (x, y)  => run(() => this.setStyleFor('itemStyles', TRANSFORM_PROPERTY, `scale(${x}, ${y}`)),
+      setScale: (x, y) => run.next(() => this.setStyleFor('mdcStyles', TRANSFORM_PROPERTY, `scale(${x}, ${y}`)),
+      setInnerScale: (x, y)  => run.next(() => this.setStyleFor('itemStyles', TRANSFORM_PROPERTY, `scale(${x}, ${y}`)),
       getNumberOfItems: () => get(this, 'items.length'),
       registerInteractionHandler: (type, handler) => this.registerMdcInteractionHandler(type, handler),
       deregisterInteractionHandler: (type, handler) => this.deregisterMdcInteractionHandler(type, handler),
@@ -127,9 +127,9 @@ export default Ember.Component.extend(MDCComponent, {
       getFocusedItemIndex: () => get(this, 'items').mapBy('element').indexOf(document.activeElement),
       focusItemAtIndex: index => get(this.itemAt(index), 'element').focus(),
       isRtl: ()  => window.getComputedStyle(get(this, 'element')).getPropertyValue('direction') === 'rtl',
-      setTransformOrigin: value => run(() => this.setStyleFor('mdcStyles', `${TRANSFORM_PROPERTY}-origin`, value)),
+      setTransformOrigin: value => run.next(() => this.setStyleFor('mdcStyles', `${TRANSFORM_PROPERTY}-origin`, value)),
       setPosition: ({ top, right, bottom, left }) => {
-        run(() => {
+        run.next(() => {
           this.setStyleFor('mdcStyles', 'top', top || null);
           this.setStyleFor('mdcStyles', 'right', right || null);
           this.setStyleFor('mdcStyles', 'bottom', bottom || null);

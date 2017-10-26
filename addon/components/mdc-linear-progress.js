@@ -78,8 +78,8 @@ export default Ember.Component.extend(MDCComponent, {
   createFoundation() {
     return new MDCLinearProgressFoundation({
       hasClass: (className) => get(this, 'mdcClasses').includes(className),
-      addClass: (className) => Ember.run(() => get(this, 'mdcClasses').addObject(className)),
-      removeClass: (className) => Ember.run(() => get(this, 'mdcClasses').removeObject(className)),
+      addClass: (className) => Ember.run.next(() => get(this, 'mdcClasses').addObject(className)),
+      removeClass: (className) => Ember.run.next(() => get(this, 'mdcClasses').removeObject(className)),
       getPrimaryBar: () => getElementProperty(this, 'querySelector')(strings.PRIMARY_BAR_SELECTOR),
       getBuffer: () => getElementProperty(this, 'querySelector')(strings.BUFFER_SELECTOR),
       setStyle: (el, property, value) => {
@@ -90,7 +90,7 @@ export default Ember.Component.extend(MDCComponent, {
         else if (el.classList.contains(strings.BUFFER_SELECTOR.slice(1))) {
           elementStyles = 'mdcBufferStyles';
         }
-        run(() => this.setStyleFor(elementStyles, property, value));
+        run.next(() => this.setStyleFor(elementStyles, property, value));
       }
     });
   },
