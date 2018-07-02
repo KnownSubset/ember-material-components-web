@@ -38,6 +38,10 @@
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.3.1.tgz#229de6927d0590d6d6b20157d778d264ef02229a"
 
+"@material/animation@^0.34.0":
+  version "0.34.0"
+  resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.34.0.tgz#a99cc9dabf7d0179b4da9a0aaa1575c4d1513823"
+
 "@material/animation@^0.4.0", "@material/animation@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.4.1.tgz#bf8b50aedad4cffce8a5b428fdca8f1abbaf176e"
@@ -49,6 +53,10 @@
 "@material/base@^0.2.5", "@material/base@^0.2.6":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.2.6.tgz#3003f3df2c06d172151d4160b8c8b2e6c65e7c01"
+
+"@material/base@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@material/base/-/base-0.35.0.tgz#8640c2da385e8cc393ff56153c5a319f5a7704cb"
 
 "@material/button@0.5.0":
   version "0.5.0"
@@ -142,13 +150,13 @@
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@material/layout-grid/-/layout-grid-0.4.4.tgz#f87daee5ad45ec27de91c61538d8410bb12d5429"
 
-"@material/linear-progress@0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@material/linear-progress/-/linear-progress-0.1.8.tgz#e9090b64f685ecbc7db5a3e15f4ec352620be9fc"
+"@material/linear-progress@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@material/linear-progress/-/linear-progress-0.35.0.tgz#e176b5511a8c629436dc0664157dcce4c1850081"
   dependencies:
-    "@material/animation" "^0.3.1"
-    "@material/base" "^0.2.5"
-    "@material/theme" "^0.2.0"
+    "@material/animation" "^0.34.0"
+    "@material/base" "^0.35.0"
+    "@material/theme" "^0.35.0"
 
 "@material/list@0.2.17":
   version "0.2.17"
@@ -244,6 +252,10 @@
 "@material/theme@^0.3.0", "@material/theme@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.3.1.tgz#6ff261ff72b3493a5cc6e746da3b472d072aa5a9"
+
+"@material/theme@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.35.0.tgz#a2c76f60b82a53d399b769ef91ec52e83ad3c3bd"
 
 "@material/theme@^0.4.0":
   version "0.4.0"
