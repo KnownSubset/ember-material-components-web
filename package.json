@@ -65,7 +65,7 @@
     "@material/tabs": "0.3.0",
     "@material/textfield": "0.3.6",
     "@material/theme": "0.2.0",
-    "@material/toolbar": "0.4.7",
+    "@material/toolbar": "2.3.0",
     "all-contributors-cli": "^4.10.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-cli": "~2.18.0",
