@@ -42,6 +42,12 @@
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.4.1.tgz#bf8b50aedad4cffce8a5b428fdca8f1abbaf176e"
 
+"@material/animation@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@material/animation/-/animation-3.0.0.tgz#bbea365f961204a499dcaf04c5c60548af45d03f"
+  dependencies:
+    tslib "^1.9.3"
+
 "@material/base@0.2.5":
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.2.5.tgz#d721a8add68bbfa8ed6759c6bbd9107cd272a2b0"
@@ -49,6 +55,12 @@
 "@material/base@^0.2.5", "@material/base@^0.2.6":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.2.6.tgz#3003f3df2c06d172151d4160b8c8b2e6c65e7c01"
+
+"@material/base@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@material/base/-/base-3.0.0.tgz#a9ab0ee0337727c682150f2946cb4db2742470e2"
+  dependencies:
+    tslib "^1.9.3"
 
 "@material/button@0.5.0":
   version "0.5.0"
@@ -110,6 +122,10 @@
     "@material/ripple" "^0.8.5"
     "@material/theme" "^0.2.0"
 
+"@material/feature-targeting@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@material/feature-targeting/-/feature-targeting-3.0.0.tgz#537007bfa6123bb3ac3a5bb15b2b4dc4dbbdd526"
+
 "@material/form-field@0.2.14":
   version "0.2.14"
   resolved "https://registry.yarnpkg.com/@material/form-field/-/form-field-0.2.14.tgz#019c34e046381b3775c1b59f444a48d04aa7b069"
@@ -142,13 +158,14 @@
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@material/layout-grid/-/layout-grid-0.4.4.tgz#f87daee5ad45ec27de91c61538d8410bb12d5429"
 
-"@material/linear-progress@0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@material/linear-progress/-/linear-progress-0.1.8.tgz#e9090b64f685ecbc7db5a3e15f4ec352620be9fc"
+"@material/linear-progress@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@material/linear-progress/-/linear-progress-3.0.0.tgz#7cf23be025707f0a726e80153bc1750869e8a66e"
   dependencies:
-    "@material/animation" "^0.3.1"
-    "@material/base" "^0.2.5"
-    "@material/theme" "^0.2.0"
+    "@material/animation" "^3.0.0"
+    "@material/base" "^3.0.0"
+    "@material/theme" "^3.0.0"
+    tslib "^1.9.3"
 
 "@material/list@0.2.17":
   version "0.2.17"
@@ -248,6 +265,12 @@
 "@material/theme@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.4.0.tgz#0aef1a0279b65c15990584fb8b8eca095c734641"
+
+"@material/theme@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@material/theme/-/theme-3.0.0.tgz#73713a1eb42f934a0f8727c0778273517e59a212"
+  dependencies:
+    "@material/feature-targeting" "^3.0.0"
 
 "@material/toolbar@0.4.7":
   version "0.4.7"
@@ -7963,6 +7986,10 @@ try-resolve@^1.0.0:
 tryor@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/tryor/-/tryor-0.1.2.tgz#8145e4ca7caff40acde3ccf946e8b8bb75b4172b"
+
+tslib@^1.9.3:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
