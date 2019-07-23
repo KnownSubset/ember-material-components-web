@@ -42,6 +42,12 @@
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-0.4.1.tgz#bf8b50aedad4cffce8a5b428fdca8f1abbaf176e"
 
+"@material/animation@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@material/animation/-/animation-3.1.0.tgz#ab04e7c2e92ab370a2b28d12af1b88538d23014f"
+  dependencies:
+    tslib "^1.9.3"
+
 "@material/base@0.2.5":
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.2.5.tgz#d721a8add68bbfa8ed6759c6bbd9107cd272a2b0"
@@ -49,6 +55,12 @@
 "@material/base@^0.2.5", "@material/base@^0.2.6":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.2.6.tgz#3003f3df2c06d172151d4160b8c8b2e6c65e7c01"
+
+"@material/base@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@material/base/-/base-3.1.0.tgz#ab933896ab6390d4e1d2f9797b74a90f47db272a"
+  dependencies:
+    tslib "^1.9.3"
 
 "@material/button@0.5.0":
   version "0.5.0"
@@ -77,6 +89,12 @@
     "@material/rtl" "^0.1.7"
     "@material/selection-control" "^0.1.0"
     "@material/theme" "^0.2.0"
+
+"@material/dom@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@material/dom/-/dom-3.1.0.tgz#1e58cad0cd5e1d9d6f6cb07422e327ad34a9d405"
+  dependencies:
+    tslib "^1.9.3"
 
 "@material/drawer@0.5.9":
   version "0.5.9"
@@ -109,6 +127,10 @@
     "@material/elevation" "^0.1.11"
     "@material/ripple" "^0.8.5"
     "@material/theme" "^0.2.0"
+
+"@material/feature-targeting@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@material/feature-targeting/-/feature-targeting-3.1.0.tgz#a6f6cacd1e0c9b60dc82f2f3bb2de8cfd472252b"
 
 "@material/form-field@0.2.14":
   version "0.2.14"
@@ -179,12 +201,16 @@
     "@material/selection-control" "^0.1.0"
     "@material/theme" "^0.2.0"
 
-"@material/ripple@0.8.6":
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/@material/ripple/-/ripple-0.8.6.tgz#039ec22937f78bcfefa330d3533c77852466d8d8"
+"@material/ripple@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@material/ripple/-/ripple-3.1.0.tgz#5cb581e9a70415c50c8b92ecd8628d5eeae34c74"
   dependencies:
-    "@material/base" "^0.2.5"
-    "@material/theme" "^0.3.0"
+    "@material/animation" "^3.1.0"
+    "@material/base" "^3.1.0"
+    "@material/dom" "^3.1.0"
+    "@material/feature-targeting" "^3.1.0"
+    "@material/theme" "^3.1.0"
+    tslib "^1.9.3"
 
 "@material/ripple@^0.8.5", "@material/ripple@^0.8.7", "@material/ripple@^0.8.8":
   version "0.8.8"
@@ -241,13 +267,19 @@
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.1.7.tgz#d94a7c5099feae9dc318c639802327c7ae82e872"
 
-"@material/theme@^0.3.0", "@material/theme@^0.3.1":
+"@material/theme@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.3.1.tgz#6ff261ff72b3493a5cc6e746da3b472d072aa5a9"
 
 "@material/theme@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.4.0.tgz#0aef1a0279b65c15990584fb8b8eca095c734641"
+
+"@material/theme@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@material/theme/-/theme-3.1.0.tgz#d31147bbc9e20bdaa3e322c9e898e4fc98807d8c"
+  dependencies:
+    "@material/feature-targeting" "^3.1.0"
 
 "@material/toolbar@0.4.7":
   version "0.4.7"
@@ -7963,6 +7995,10 @@ try-resolve@^1.0.0:
 tryor@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/tryor/-/tryor-0.1.2.tgz#8145e4ca7caff40acde3ccf946e8b8bb75b4172b"
+
+tslib@^1.9.3:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
