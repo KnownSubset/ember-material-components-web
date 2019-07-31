@@ -40,7 +40,7 @@
   "dependencies": {
     "ember-cli-babel": "^6.6.0",
     "ember-cli-htmlbars": "^1.0.10",
-    "ember-rollup": "^0.3.4",
+    "ember-rollup": "^2.1.1",
     "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
