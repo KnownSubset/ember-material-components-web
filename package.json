@@ -56,7 +56,7 @@
     "@material/grid-list": "0.2.13",
     "@material/icon-toggle": "0.1.19",
     "@material/layout-grid": "0.4.4",
-    "@material/linear-progress": "0.1.8",
+    "@material/linear-progress": "5.1.0",
     "@material/list": "0.2.17",
     "@material/menu": "0.4.5",
     "@material/radio": "0.2.12",
